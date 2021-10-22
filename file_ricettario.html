@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ricettario</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<style type="text/css">
+	*{
+		margin: 0;
+	}
+
+	   /* Classi per font*/
+
+
+	h1{
+         text-align: center;
+         padding-top: 100px; 
+         color: red;
+	}
+
+h3{
+		text-align: center;
+		padding-top: 50px;
+	}
+	#sezione-1{
+		height: 100vh;
+		background-image: url(piatti.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	ul {
+		list-style-type: none;
+		padding-left: 0px;
+
+	}
+	li{ padding-top: 10px;
+
+	}
+	.lista{
+		padding-top: 15px;
+	}
+	#titolo {
+
+       margin: 0;
+       text-align: center
+	}
+	#titolo img{
+		padding-top: 30px;
+		height: 500px;
+		width: 700px;
+	}
+	#menu{
+		padding-left: 50px;
+		padding-top: 40px;
+	}
+	#ricette{ 
+		padding-top: 50px;
+
+	}
+	.ingredienti h2{
+		
+
+	}
+	.ingredienti{
+		padding-left: 35px;
+	padding-top: 30px;
+	}
+	.preparazione{
+		text-align: center;
+		padding-top: 30px;
+	}
+	.consiglio{
+		text-align: center;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	img{
+		max-width: 100%;
+	}
+
+
+</style>
+</head>
+
+<body>
+	<p>
+  <a class="btn btn-primary" data-bs-toggle="collasso" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Link with href
+  </a>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collassoEsempio" aria-expanded="false" aria-controls="collapseExample">
+    Button with data-bs-target
+  </button>
+  </p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+  </div>
+</div>
+<section id="sezione-1">
+
+	<div id="titolo">
+		<h1>RICETTARIO DI ANTONIO</h1>
+		<h3>Le ricette piu buone del mondo</h3>
+		
+	</div>
+</section>
+<section id="menu">
+	 <h2>Elenco delle ricette</h2>
+	<ul class="lista">
+		<li>
+			
+			Spaghetti alla carbonara</a>
+		</li>
+
+		  <li>
+			 <a href="#lasagne">Lasagne alla bolognese</a>
+		   </li>
+
+		    <li>
+		    	<a href="#pizza">Pizza margherita</a>
+		    </li>
+
+		    <li>
+		    	<a href="#penne">Penne all arrabbiata</a>
+		    </li>
+	</ul>
+	
+</section>
+<section id="ricette">
+  <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"> Spaghetti alla carbonara</a>
+	<div class="collapse multi-collapse" id="multiCollapseExample1" class="Spaghetti">
+		
+		<div class="ingredienti">
+			<img src="spaghetti_carbonara.png">
+			<h2>Ingredienti</h2>
+			<ul>
+				<li>Spaghetti (320g)</li>
+				<li>Tuorli di uova medie (6)</li>
+				<li>Pepe nero q.b.</li>
+				<li>Guanciale (150g)</li>
+				<li>Pecorino romano (50g)</li>
+			</ul>
+		</div>
+		<div class="preparazione">
+			<h2>Preparazione</h2>
+			<p>Per preparare gli spaghetti alla carbonara cominciate mettendo sul fuoco una pentola con l’acqua salata per cuocere la pasta. Nel frattempo eliminate la cotenna dal guanciale e tagliatelo prima a fette e poi a striscioline spesse circa 1cm . La cotenna avanzata potrà essere riutilizzata per insaporire altre preparazioni. Versate i pezzetti in una padella antiaderente  e rosolate per circa 15 minuti a fiamma media, fate attenzione a non bruciarlo altrimenti rilascerà un aroma troppo forte.Nel frattempo tuffate gli spaghetti nell’acqua bollente e cuoceteli per il tempo indicato sulla confezione. Intanto versate i tuorli in una ciotola , aggiungete anche la maggior parte del Pecorino previsto dalla ricetta la parte restante servirà per guarnire la pasta.Insaporite con il pepe nero, amalgamate tutto con una frusta a mano. Aggiungete un cucchiaio di acqua di cottura per diluire il composto e mescolate.Intanto il guanciale sarà giunto a cottura, spegnete il fuoco e tenetelo da parte. Scolate la pasta al dente direttamente nel tegame con il guanciale  e saltatela brevemente per insaporirla. Togliete dal fuoco e versate il composto di uova e Pecorino nel tegame. Mescolate velocemente per amalgamare. Per renderla ben cremosa, al bisogno, potete aggiungere poca acqua di cottura della pasta. Servite subito gli spaghetti alla carbonara insaporendoli con il Pecorino avanzato e il pepe nero macinato a piacere.</p>
+		</div>
+		<div class="consiglio">
+			<h2>Consiglio</h2>
+			<p>Come potete arricchire gli spaghetti alla carbonara? Innanzitutto rispettando i vostri gusti, in cucina è sempre importantissimo! Altrimenti eccovi delle validissime alternative. Per esempio in alternativa agli spaghetti si possono usare anche rigatoni o mezze maniche e invece del guanciale provate con della pancetta tesa utilizzando un grasso in padella, dell'olio o del burro. Poi sostituite il Pecorino o fate a metà con del Parmigiano grattugiato. E per finire, per rendere ancora più corposa la vostra carbonara, non ci sarà bisogno di aggiungere la panna! Potete semplicemente aggiungere poca acqua di cottura della pasta oppure usare una combinazione di uova intere e tuorli: sperimentate per trovare la consistenza che più preferite!
+Noi abbiamo utilizzato gli spaghetti n.3 ma potete provare anche i n.5 e gli Spaghettoni!</p>
+		</div>
+	</div>
+	  <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample2"> Lasagne alla bolognese</a>
+
+	<div class="lasagne" class="collapse multi-collapse" id="multiCollapseExample2" >
+
+		<h3>Lasagne alla bolognese</h3>
+
+		
+		<div class="ingredienti">
+			<img src="lasagne_bolognese.png">
+			<h2>Ingredienti</h2>
+			<ul>
+				<li>Semola di grano duro rimacinata 350 g</li>
+                <li>Farina 00 150 g</li>
+                <li>Uova 2</li>
+                <li>Tuorli 3</li>
+				
+			</ul>
+		</div>
+		<div class="preparazione">
+			<h2>Preparazione</h2>
+			<p>Per preparare le lasagne alla bolognese, iniziate dal ragù. Preparate il brodo vegetale che dovrete tenere in caldo. Poi prendete la pancetta, tagliatela prima a striscioline. Con un coltello o una mezzaluna sminuzzatela per bene. A parte preparate un trito fine con carote, cipolle, sedano e tenetelo da parte.In una casseruola versate un filo d'olio e la pancetta. Sgranatela bene con un mestolo e lasciatela rosolare per alcuni minuti. Aggiungete poi il trito di verdure  e fate insaporire per 5-6 minuti. Aggiungete poi la carne macinata . Mescolate e alzate la fiamma. Lasciate rosolare la carne senza fretta, dovrà essere ben rosolata per sigillare i succhi e risultare morbida non stopposa.Sfumate con il vino rosso , poi aspettate che sia completamente evaporato e aggiungete la passata di pomodoro. Mescolate, il ragù deve cuocere due ore. Quando ha ripreso il bollore potete aggiungete poco brodo caldo, uno o due mestoli. Poi fate andare il ragù per un paio d'ore almeno.Dovrete cuocere con il coperchio, senza chiudere del tutto. Controllate e mescolate di tanto in tanto, al bisogno aggiungete altro brodo e lasciate cuocere per il tempo indicato. Passate adesso alla pasta. Come prima cosa versate gli spinaci in un tegame, aggiungete poca acqua, coprite con un coperchio e lasciate cuocere fino a che non saranno appassiti, in totale ci vorranno 5-6 minuti. A questo punto scolateli, lasciateli intiepidire e strizzateli bene. Trasferiteli in un mixer </p>
+		</div>
+		<div class="consiglio">
+			<h2>Consiglio</h2>
+			<p>Con queste dosi otterrete 5 strati, aumentando le dosi potrete realizzare anche 8 strati. La lasagna alla bolognese è la capostipite, insieme a quella di Carnevale, di tutte le gustosissime varianti della nostra tradizione: da quelle stagionali, come le lasagne ai funghi o alle zucchine, a quelle più sfiziose come le lasagne al pistacchio!</p>
+		</div>
+	</div>
+	<a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="false" aria-controls="multiCollapseExample3">Pizza margherita</a>
+
+	<div class="pizza" class="collapse multi-collapse" id="multiCollapseExample3">
+		<h3>Pizza margherita</h3>
+		<div class="ingredienti">
+			<img src="pizza_margherita.png">
+			<h2>Ingredienti</h2>
+			<ul>
+				<li>Spaghetti (320g)</li>
+				<li>Tuorli di uova medie (6)</li>
+				<li>Pepe nero q.b.</li>
+				<li>Guanciale (150g)</li>
+				<li>Pecorino romano (50g)</li>
+			</ul>
+		</div>
+		<div class="preparazione">
+			<h2>Preparazione</h2>
+			<p>Per preparare la pizza margherita, come prima cosa iniziate a realizzare l'impasto di base. Versate l'acqua a temperatura ambiente in una brocca, aggiungete il lievito e mescolate con un cucchiaino in modo da farlo sciogliere completamente. Noi abbiamo scelto di impastare a mano ma se preferite potete realizzare l'impasto di base anche in planetaria, utilizzando il gancio e azionandola a velocità medio-bassa. Quindi in una ciotola unite le due farinepoi aggiungete circa metà dell'acqua a filo impastando man mano con le mani. Unite anche il sal e la parte restante di acqua.Continuate a lavorare il composto con le mani fino ad ottenere un risultato uniformefino a che non risulterà liscio ed elastico. Ottenuto un bel panetto liscio, lasciatelo riposare sul piano di lavoro per una decina di minuti coprendolo con la ciotola. Una volta riposato dategli una piccola piega: immaginate che la sfera sia divisa in 4 parti, prendete l’estremità di ognuna, tiratela delicatamente e ripiegatela verso il centro, infine dategli la forma di una sfera. Trasferite l'impasto così formato in una ciotola, coprite con pellicola trasparente e lasciate lievitare. Per comodità potete mettere la ciotola in forno spento ma con la luce accesa, così l’interno raggiungerà la temperatura di 26°-28°, ideale per la lievitazione; in alternativa potete anche tenere la bacinella in un luogo caldo. I tempi sono approssimativi poiché ogni impasto, la temperatura e le condizioni metereologiche influenzano la lievitazione: mediamente l’impasto dovrebbe impiegare 2 ore a raddoppiare di volume. A questo punto aggiungete anche l'olio, sempre poco per volta, continuando ad impastare in modo da favorirne l'assorbimento. Trasferite poi l'impasto su un piano e lavoratelo energicamente per qualche minuto. Quando l'impasto sarà ben lievitato, trasferitelo su un piano capovolgendo delicatamente la ciotola e dividetelo a metà utilizzando un tarocco; se dovesse essere necessario potete spolverizzare il piano con un po' di farina.Tornate a dare una piega all’impasto, come avete fatto prima della lievitazione, poi capovolgetelo e procedete con la pirlatura: pirlare l'impasto significa farlo girare con le mani sul ripiano di lavoro portandolo verso di voi e poi allontanandolo ripetutamente fino ad ottenere una sfera liscia e regolare. Trasferite i due impasti su un vassoio  e lasciateli riposare ancora per una mezz'oretta, sempre coperti con pellicola o con un canovaccio.Nel frattempo preriscaldate il forno a 250° in modalità statica e occupatevi di preparare gli ingredienti per la farcitura. Per prima cosa ponete un colino su una ciotola e con le mani sfilacciate la mozzarella posizionandola man mano nel colino. In questo modo perderà tutto il siero in eccesso. Versate la polpa di pomodoro in un'altra ciotola e conditela con il sale n giro d'olio e l'origano. Mescolate il tutto e non appena saranno trascorsi i 30 minuti riprendete l'impasto.Spolverizzate il piano di lavoro e posizionatevi uno dei due panetti. Con le mani schiacciatelo leggermente, poi stendetelo esercitando una leggera pressione e facendo un movimento rotatorio. Evitate di schiacciare troppo le bolle e se l'impasto dovesse risultare troppo elastico attendete qualche minuto prima di lavorarlo ancora. Quindi sollevate il disco di impasto, posizionatelo sulle mani chiudendole a pugno e ruotatelo; in questo modo si stenderà ulteriormente Ungete leggermente una teglia del diametro di 28 cm e posizionate l'impasto all'interno aiutandovi con le mani per donargli una forma regolare. Cospargete con metà del pomodoro e cuocete in forno statico preriscaldato a 250° per 6-7 minuti, sul ripiano centrale. Trascorso questo tempo, sfornate la pizza, aggiungete il fiordilatte 32 e infornate nuovamente per 6-7 minuti alla stessa temperatura. Quindi sfornate la vostra pizza margherita e guarnite con le foglioline di basilico fresco.</p>
+		</div>
+		<div class="consiglio">
+			<h2>Consiglio</h2>
+			<p>Se preferite cuocere la pizza in una teglia rettangolare non sarà necessario dividere l'impasto in due panetti. Dopo la prima lievitazione stendetelo direttamente all'interno della teglia, attendete 15-20 minuti prima di condirla e cuocerla! Sarà necessario prolungare i tempi di cottura fino a che la vostra pizza non risulterà ben dorata. Se non avete tempo per la lievitazione provate la pizza con lievito istantaneo o bicarbonato!</p>
+		</div>
+	</div>
+	<a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample4" role="button" aria-expanded="false" aria-controls="multiCollapseExample4">Penne all arrabbiata</a>
+
+	<div class="penne" class="collapse multi-collapse" id="multiCollapseExample4">
+		<h3>Penne all arrabbiata</h3>
+		<div class="ingredienti">
+			<img src="penne_arrabbiata.png">
+			<h2>Ingredienti</h2>
+			<ul>
+				<li>Penne rigate (320g)</li>
+				<li>Aglio (1 spicchio)</li>
+				<li>Prezzemolo q.b.</li>
+				<li>Sale fino q.b (150g)</li>
+				<li>Peperoncino secco.</li>
+				<li>Olio extra vergine d'oliva</li>
+			</ul>
+		</div>
+		<div class="preparazione">
+			<h2>Preparazione</h2>
+			<p>Per preparare le penne all'arrabbiata iniziate scolando i pelati. Trasferiteli in una ciotola e schiacciateli con una forchetta per spezzettarli. A questo punto sbriciolate il peperoncino secco. Mettete sul fuoco una pentola colma d'acqua, salata a piacere, per la cottura della pasta. In una casseruola intanto versate un po' d'olio, unite lo spicchio d'aglio sbucciato.Aggiungete anche il peperoncino e lasciate soffriffere dolcemente, poi unite i pomodori. Date una mescolata e regolate di sale. Poi coprite con un coperchio e lasciate cuocere per circa 12 minuti, mescolando di tanto in tanto.Quando il sugo sarà quasi cotto cuocete anche la pasta, al dente, seguendo i tempi di cottura riportati sulla confezione. Trascorsi i 12 minuti togliete il coperchio ed eliminate l'aglio. Scolate la pasta e trasferitela direttamente nel sugo; saltatela per un istante e aggiungete dell'acqua di cottura se necessario, quindi spegnete. Aggiungete il prezzemolo tritato, mescolate un'ultima volta e servite le vostre penne all'arrabbiata ancora calde.</p>
+		</div>
+		<div class="consiglio">
+			<h2>Consiglio</h2>
+			<p>Utilizzate il peperoncino fresco al posto di quello secco e guarnite ciascun piatto con del Pecorino romano! </p>
+		</div>
+	</div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>
